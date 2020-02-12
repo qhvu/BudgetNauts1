@@ -1,0 +1,64 @@
+<!doctype html>
+
+<html>
+ <head>
+    <title>List Of Spending</title>
+
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/bootstrap-theme.css" rel="stylesheet">
+  <link href="css/menuButton.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+
+ </head>
+
+<body>
+  <h1>
+    List Of Spending <a href = "addExpense.html" id="plusSignMargin" target="_blank"> <img src="images/plusSign.jpg" alt="add expense"></a>
+  </h1>
+<hr>
+<div class = "dropdown">
+    <image onclick="menu()" class = "dropbtn" src="images/settingsIcon.jpg"></image>
+    <div id = "drop" class = "dropdown-content">
+      <a href = "/Home">Home</a>
+      <a href = "/listOfSpending">List of Spending</a>
+      <a href = "#">Spending Overview</a>
+      <a href = "#">Budget</a>
+    </div>
+</div>
+
+<div class="container" id="table">
+    <table id = "table1">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Name</th>
+          <th>Category</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+
+      <tbody>
+      	{{#each purchase}}
+      	<div class = "purchases">
+        	<tr>
+          	<td>{{date}}</td>
+          	<td>{{name}}</td>
+          	<td>{{category}}</td>
+          	<td>{{price}}</td>
+        	</tr>
+    	</div>
+        {{/each}}
+
+      </tbody>
+    </table>
+</div>
+
+  <script src="./js/jquery-1.11.0.js"></script>
+  <script src="./js/bootstrap.js"></script>
+  <script src="./js/menuButton.js"></script>
+  <script src="./routes/listOfSpending.js"></script>
+  <script src="./routes/index.js"></script>
+
+</body>
+</html>

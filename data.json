@@ -1,34 +1,40 @@
 {
-	"friends": [
+	"purchase": [
 		{
-			"name": "Doug Engelbart",
-			"description": "Has awesome pet mice",
-			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Douglas_Engelbart_in_2008.jpg/972px-Douglas_Engelbart_in_2008.jpg"			
+			"date": "2/1/2020",
+			"name": "T-shirt",
+			"category": "Clothing",
+			"price": "$25"			
 		},
 		{
-			"name": "Ivan Sutherland",
-			"description": "Great at sketching",
-			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/5/5c/Ivan_Sutherland_at_CHM.jpg"			
+			"date": "2/1/2020",
+			"name": "Sushi",
+			"category": "Food",
+			"price": "$30"
 		},
 		{
-			"name": "Lucy Suchman",
-			"description": "Loves Trukese navigators",
-			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/d/df/Lucy_Suchman.jpeg"			
+			"date": "2/2/2020",
+			"name": "Gas",
+			"category": "Transportation",
+			"price": "$20"
 		},
 		{
-			"name": "Vannevar Bush",
-			"description": "Has stellar associative memory",
-			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/e/ea/Vannevar_Bush_portrait.jpg"			
+			"date": "2/4/2020",
+			"name": "Electric",
+			"category": "Utilities",
+			"price": "$50"
 		},
 		{
-			"name": "Grace Hopper",
-			"description": "Only friend with a Navy ship named after them",
-			"imageURL": "http://amhistory.si.edu/ogmt/images/upload/women-mathematicians/AHB2012q06025.jpg"
+			"date": "2/5/2020",
+			"name": "Bus",
+			"category": "Transportation",
+			"price": "$2.25"
 		},
 		{
-			"name": "Allen Newell",
-			"description": "Really into psychology",
-			"imageURL": "http://uploads.edubilla.com/awards-winners/92/b4/allen-newell.jpg"
+			"date": "2/9/2020",
+			"name": "Shorts",
+			"category": "Clothing",
+			"price": "$15"
 		}
 	]
 }
