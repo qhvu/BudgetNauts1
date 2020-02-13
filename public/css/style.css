@@ -105,6 +105,14 @@ a, h1{
 
 }
 
+.heading{
+
+}
+
+.dropdown{
+margin-right: 40%;
+}
+
 input {
   width: 50%;
   display: block;
