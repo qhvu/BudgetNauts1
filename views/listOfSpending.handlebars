@@ -23,7 +23,7 @@
       <a href = "/Home">Home</a>
       <a href = "/listOfSpending">List of Spending</a>
       <a href = "#">Spending Overview</a>
-      <a href = "#">Budget</a>
+      <a href = "/budget">Budget</a>
     </div>
 </div>
 <div style = "float:right;" class = "">
@@ -46,7 +46,7 @@
       	{{#each purchase}}
       	<div class = "purchases">
         	<tr>
-          	<td>{{date}}</td>
+          	<td><img onclick = "removePurchase() id = "remove" "src="images/xIcon.png"></img>{{date}}</td>
           	<td>{{name}}</td>
           	<td>{{category}}</td>
           	<td>{{price}}</td>

@@ -1,12 +1,15 @@
 var data = require("../data.json");
 
-exports.addFriend = function(request, response) {    
+exports.addExpense = function(request, response) {    
 	// Your code goes here
+	var date = request.query.date;
 	var name = request.query.name;
-	var description = request.query.description;
+	var category = request.query.category;
+	var price = request.query.price;
+
 	console.log("name:" + name);
 
-	response.render('index', data);
+	response.render('listOfSpending', data);
 
-	data.friends.push(name,description);
+	data.purchases.push(date,name,category,price);
  }
