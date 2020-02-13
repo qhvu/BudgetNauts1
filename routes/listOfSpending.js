@@ -5,3 +5,4 @@ exports.view = function(request, response){
 	console.log(data);
 	response.render('listOfSpending', data);
 };
+

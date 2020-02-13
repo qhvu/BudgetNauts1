@@ -15,6 +15,7 @@ window.onclick = function(event) {
   }
 }
 
+
 document.getElementById('button').addEventListener('click', function() {
   document.querySelector('.bg-modal').style.display = 'flex';
 });

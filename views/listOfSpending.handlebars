@@ -46,7 +46,7 @@
       	{{#each purchase}}
       	<div class = "purchases">
         	<tr>
-          	<td><img id = "remove" src="images/xIcon.png"></img>{{date}}</td>
+          	<td><img onclick = "addExpense()" id = "remove" src="images/xIcon.png"></img>{{date}}</td>
           	<td>{{name}}</td>
           	<td>{{category}}</td>
           	<td>{{price}}</td>
@@ -61,12 +61,12 @@
 <div class = "bg-modal">
   <div class = "modal-content">
     <div class = "close">+</div>
-    <form action = "">
-      <input type = "text" placeholder="Date">
-      <input type = "text" placeholder="Name">
-      <input type = "text" placeholder="Category">
-      <input type = "text" placeholder="Price">
-      <a href="" id = "add" class = "button">Confirm</a>
+    <form method = "get" action = "/add" style="text-align: center">
+      <input type = "text" placeholder="Date" name="date">
+      <input type = "text" placeholder="Name" name="name">
+      <input type = "text" placeholder="Category" name="category">
+      <input type = "text" placeholder="Price" name="price">
+      <input type ="submit" id = "add" class = "button"></a>
     </form>
   </div>
 </div>

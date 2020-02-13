@@ -11,5 +11,7 @@ exports.addExpense = function(request, response) { 
 
 	response.render('listOfSpending', data);
 
-	data.purchases.push(date,name,category,price);
+	var newEntry = {"date": date, "name": name, "category": category, "price": price};
+
+	data.purchase.push(newEntry);
  }
