@@ -16,41 +16,26 @@
 
 <body >
 
+<div class = "loginbutton">
+	<a href="#" id = "button" class = "button">LOGIN</a>
+</div>
 
-	<div class= "header">
-		<span class = "dropdown">
-		<image onclick="menu()" class = "dropbtn" src="images/settingsIcon.jpg"></image>
-			<div id = "drop" class = "dropdown-content">
-				<a href = "#">Home</a>
-				<a href = "/listOfSpending">List of Spending</a>
-				<a href = "#">Spending Overview</a>
-				<a href = "/budget">Budget</a>
-			</div>
-		</span>
-	</div>
-	
-<div class="container">
-
-	<h1>Hi, Your Name</h1>
-	<br>
-
-	<h1>Amount Left</h1>
-
-    	<h1 class="border">$137.54</h1>
-
-    <br>
-
-    <p>
-	<a href ="images/graph.png">
-      <img src="images/graph.png" alt="Pie Chart">
-    </a>
-    </p>
+<div class = "bg-modal">
+  <div class = "modal-content">
+  	<div class = "close">+</div>
+    <form action = "" style="text-align: center;">
+      <input type = "text" placeholder="Username" name="date">
+      <input type = "text" placeholder="Password" name="name">
+      <a href ="/homeScreen" class = "button">LOGIN</a>
+    </form>
+  </div>
 </div>
 
 	<script src="./js/jquery-1.11.0.js"></script>
 	<script src="./js/bootstrap.js"></script>
 	<script src="./js/menuButton.js"></script>
 
+	<script src="./routes/home.js"></script> 
 	<script src="./routes/listOfSpending.js"></script> 
 	<script src="./routes/budget.js"></script>
 
